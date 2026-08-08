@@ -28,13 +28,18 @@
   <body>
     <main class="page">
       <header class="topbar">
-        <div class="brand-lockup">
+        <a class="brand-lockup" href="./index.html" aria-label="EezEvent home">
           <img class="brand-logo" src="./assets/eezevent-just-logo.png" alt="EezEvent logo" />
           <span class="brand-wordmark">EezEvent</span>
-        </div>
+        </a>
         <div class="button-row topbar-actions">
-          <a class="btn btn-outline" href="./index.html">Home</a>
-          <a class="btn btn-outline" href="./help.html">Support</a>
+          <a
+            class="btn btn-solid btn-icon btn-waitlist"
+            href="mailto:support@eezevent.com?subject=EezEvent%20early%20access"
+            >Early access</a
+          >
+          <a class="btn btn-outline btn-icon btn-support" href="./help.html">Support</a>
+          <a class="btn btn-outline btn-icon btn-overview" href="./marketing.html">Overview</a>
         </div>
       </header>
 
@@ -57,32 +62,12 @@
           </div>
         </div>
 
-        <div class="marketing-visual" aria-label="EezEvent app feature highlights">
+        <div class="marketing-visual" aria-label="EezEvent vendor app screenshot">
           <img
-            class="marketing-hero-logo"
-            src="./assets/eezevent-logo.png"
-            alt="EezEvent"
+            class="marketing-screenshot"
+            src="./assets/eezevent-vendor-app-screen.png"
+            alt="EezEvent vendor dashboard app screenshot"
           />
-          <div class="app-preview-panel">
-            <div class="app-preview-header">
-              <span>Event Dashboard</span>
-              <strong>Active</strong>
-            </div>
-            <div class="app-preview-list">
-              <div>
-                <span>Venue inquiry</span>
-                <strong>Quote sent</strong>
-              </div>
-              <div>
-                <span>Catering contract</span>
-                <strong>Signature needed</strong>
-              </div>
-              <div>
-                <span>Photography</span>
-                <strong>Confirmed</strong>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
