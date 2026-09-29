@@ -346,7 +346,7 @@
         <p>
           The Android app configuration may include media and audio-related permissions.
           As of the effective date of this Policy, EezEvent uses media access to support
-          image and file uploads and does not offer payment processing through the app.
+          image and file uploads. Store-billed subscriptions are described in Section 3.
         </p>
 
         <h3>1.6 Notifications and Device Information</h3>
@@ -387,6 +387,8 @@
           <li>Service providers that help us operate the Platform.</li>
         </ul>
 
+        <h3>1.9 Subscription and Purchase Information</h3>
+        <p>For Basic and Pro subscriptions, we collect information linked to your EezEvent account, including plan, store provider, product identifier, transaction and order identifiers, original transaction identifiers or purchase tokens, trial and billing dates, renewal status, pending plan changes, and store verification responses. These records allow us to verify purchases and determine subscription access.</p>
         <h2>2. How We Use Information</h2>
         <p>We use information to:</p>
         <ul>
@@ -408,6 +410,7 @@
             Send service-related notices, push notifications, email validation messages,
             legal-document prompts, support responses, and operational updates.
           </li>
+          <li>Verify subscription purchases, manage plan limits and feature access, restore eligible purchases, handle subscription support, prevent misuse, and maintain necessary subscription records.</li>
           <li>Provide customer support and respond to requests.</li>
           <li>Monitor, troubleshoot, secure, maintain, and improve the Platform.</li>
           <li>
@@ -417,20 +420,17 @@
         </ul>
         <p>
           As of the effective date of this Policy, EezEvent does <strong>not</strong> use
-          analytics, advertising, attribution, or tracking SDKs in the mobile app, and does
-          <strong>not</strong> sell personal information.
+          analytics, advertising, attribution, or tracking SDKs in the mobile app.
         </p>
 
-        <h2>3. Payments</h2>
-        <p>
-          EezEvent does not process payments in the submitted app version as of the
-          effective date of this Policy. Quotes, contracts, reservation information, and
-          related documents are used for planning and workflow coordination. If payment
-          features are added later, we will update this Policy as appropriate.
-        </p>
+        <h2>3. Subscriptions and Payments</h2>
+        <p>Apple or Google processes payments for subscriptions purchased through its store. We exchange subscription verification information with the relevant store and receive purchase and subscription status information as described in Section 1.9. EezEvent does not receive your full payment-card number through these store subscription flows. Apple and Google process information under their own applicable privacy policies and terms.</p>
+        <p>EezEvent subscription charges are separate from payments between customers and vendors. The Platform does not collect, hold, or transfer payments for vendor event services; quotes, contracts, and related documents support planning and coordination.</p>
 
         <h2>4. How We Share Information</h2>
-        <p>We do not sell your personal information.</p>
+        <p>Paid Pro subscriptions include event discovery and outreach as described in Section 4.1.1, subject to your event outreach settings.</p>
+        <!-- RELEASE REVIEW: Assess applicable state-law sale/sharing classifications
+             and required disclosures and rights mechanisms before publication. -->
         <p>We may share information in the following ways:</p>
 
         <h3>4.1 With Clients, Planners, Vendors, and Team Members</h3>
@@ -455,6 +455,11 @@
             an inquiry, responds to outreach, or otherwise interacts with a vendor.
           </li>
         </ul>
+
+        <h3>4.1.1 Pro Lead Discovery and Outreach</h3>
+        <p>Eligible Pro vendors and their authorized team members can discover relevant event opportunities and send outreach through the Platform as part of their paid subscription. Event information used for matching and outreach may include event descriptions, service needs, ZIP code, dates, guest count, and budget. This discovery can occur before you send an inquiry or respond to a vendor.</p>
+        <p>In the outreach workflow, we withhold your client name, email address, and phone number from the vendor until you respond to that vendor's outreach. After your response, those details may be shared with that vendor and its authorized team members to coordinate services. Avoid including contact information in event descriptions or other materials visible during discovery if you do not want to disclose it there.</p>
+        <p>You can opt out of vendor lead discovery and unsolicited outreach for an event when creating the event or by changing the setting on an existing event. Opting out hides that event from Pro lead discovery and prevents new unsolicited outreach for that event. You are not required to respond to outreach or book a vendor. This event-level control does not limit privacy rights available under applicable law; you may contact us as described in Section 7 to exercise those rights.</p>
 
         <h3>4.2 With Service Providers</h3>
         <p>
@@ -494,6 +499,11 @@
         </ul>
 
         <h2>5. Data Retention and Deletion</h2>
+        <p>When account deletion is completed, we immediately replace identifying profile fields with deleted-account placeholders and remove account credentials and associated sign-in and notification records. This does not mean that every related record becomes anonymous: our deletion process also retains encrypted copies of original account information in an audit vault, including name, email address, phone number, and sign-in identity information and, for vendors, business and service information. Encryption protects retained information but does not make it anonymous.</p>
+        <p>We retain records with replaced profile identifiers to preserve relationships between event, inquiry, and other workflow records. Separately, encrypted original identity records may be retained where necessary to resolve disputes or investigate fraud. Records that remain linkable to you, including through the audit vault, remain personal information; they are not treated as anonymous merely because profile fields have been replaced.</p>
+        <p>Retention is limited by the purpose of the record, whether a dispute or fraud investigation requires it, and applicable legal obligations. Preserving database relationships does not by itself require retaining original names or contact details indefinitely.</p>
+        <!-- RELEASE REVIEW: Implement and verify purpose-specific audit-vault access,
+             retention review and expiry; no fixed retention period has been approved. -->
         <p>
           We retain information for as long as reasonably necessary to provide the
           Platform, maintain business records, comply with legal obligations, resolve
@@ -513,6 +523,8 @@
           identify you.
         </p>
 
+        <p>Canceling or downgrading a subscription does not itself request account deletion. Some membership and outreach records remain after a downgrade to support account history and restoration of eligible access. Account deletion and applicable retention requirements are handled separately.</p>
+        <p>Deleting the app or your EezEvent account does not itself cancel billing through Apple or Google. Use <a href="https://apps.apple.com/account/subscriptions">Apple subscription settings</a> or <a href="https://play.google.com/store/account/subscriptions">Google Play subscriptions</a> to stop future renewal. You may request account deletion without waiting for the subscription to expire.</p>
         <h2>6. Security</h2>
         <p>
           We use reasonable administrative, technical, and organizational safeguards
@@ -549,7 +561,7 @@
           against for exercising privacy rights.
         </p>
         <p>
-          We do not sell personal information. As of the effective date of this Policy, we
+          As of the effective date of this Policy, we
           do not use personal information for cross-context behavioral advertising or
           targeted advertising.
         </p>
@@ -583,22 +595,15 @@
           delete the information or otherwise address the issue.
         </p>
 
-        <h2>12. International Users</h2>
+        <h2>12. United States Availability and Processing</h2>
         <p>
-          EezEvent is operated from the United States. If you access the Platform from
-          outside the United States, your information may be transferred to, stored in,
-          and processed in the United States or other locations where our service
-          providers operate.
+          EezEvent is operated from the United States and is currently offered for use in
+          the United States. Your information may be stored and processed in the United
+          States or other locations where our service providers operate.
         </p>
 
-        <h2>13. No Reliance on Platform Data</h2>
-        <p>
-          Information displayed on the Platform, including vendor details, event details,
-          messages, inquiry status, quote status, calendar status, availability
-          information, documents, and workflow information, may be incomplete, delayed, or
-          inaccurate. Users should verify important details directly with the relevant
-          client, planner, vendor, or business before making decisions.
-        </p>
+        <h2>13. Privacy and Platform Agreements</h2>
+        <p>This Policy describes our information practices. The <a href="./customer-agreement.html">Customer Terms</a> and <a href="./vendor-agreement.html">Vendor Agreement</a> describe the terms for using the Platform. Their service disclaimers do not replace the privacy disclosures in this Policy or limit your mandatory privacy rights.</p>
 
         <h2>14. Changes to This Policy</h2>
         <p>
