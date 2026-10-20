@@ -1,6 +1,6 @@
 # Launch policy review — October 20, 2026
 
-Scope: Vendor Agreement and Privacy Policy HTML and Markdown on `feature/launch-party-2026-content`, with source checks against the current mobile and services `dev` branches. This is a product/source consistency review and proposed drafting update, not a determination that every jurisdictional or store obligation has been satisfied. No policy was published, no app/backend was changed, and no branch was merged.
+Scope: Customer Terms, Vendor Agreement and Privacy Policy HTML and Markdown on `feature/launch-party-2026-content`, with source checks against the current mobile and services `dev` branches. This is a product/source consistency review and proposed drafting update, not a determination that every jurisdictional or store obligation has been satisfied. No policy was published, no app/backend was changed, and no branch was merged.
 
 ## Findings and changes
 
@@ -10,7 +10,9 @@ Scope: Vendor Agreement and Privacy Policy HTML and Markdown on `feature/launch-
 4. **Location disclosures were too general.** Added entered/saved addresses and ZIPs, service radii, coordinates and approximate ZIP-derived locations. The inspected discovery flow does not require live device GPS access.
 5. **Website-provider requests were not explained.** Added GitHub Pages, Google Fonts requests, and off-site Evite, maps and store links. This does not introduce analytics or new trackers.
 6. **Change notices and privacy choices needed clarification.** Added material-change notice/required consent language and conditional statutory opt-out/appeal/agent request guidance through support. No unsupported response deadline or claim of universal legal applicability is added.
-7. **Versioning and navigation were stale.** Proposed launch effective date is October 21, 2026; version `2026-10-21` appears in both formats. The two legal-page headers now link to launch details using the existing design.
+7. **Versioning and navigation were stale.** Proposed launch effective date is October 21, 2026; version `2026-10-21` appears in both formats for all three documents. All legal-page headers now link to launch details using the existing design.
+
+8. **Customer Terms follow-up.** The customer Markdown also omitted the current HTML's paid-placement, outreach opt-out/contact masking, current vendor subscriptions, and mandatory-rights liability language. Synchronized the full copies and added completed-inquiry review eligibility, author editing, public display, honest-review protections and a non-exclusive review license. Added location/availability limitations, authorized planner/team participation, limits of removing prior access, and the distinction between account/event deletion and canceling a vendor booking. Updated material-change notices and electronic acceptance to reference intentional acceptance of an identified version rather than assuming every sign-in is a signature. Existing arbitration wording and liability cap were retained for professional review.
 
 ## Implementation evidence
 
@@ -32,13 +34,14 @@ Scope: Vendor Agreement and Privacy Policy HTML and Markdown on `feature/launch-
 
 ## Primary references checked
 
+- [FTC Consumer Review Fairness Act guidance](https://www.ftc.gov/business-guidance/resources/consumer-review-fairness-act-what-businesses-need-know): honest consumer criticism, penalties and review ownership.
 - [FTC Consumer Reviews and Testimonials Rule — Questions and Answers](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers): fake reviews, sentiment-conditioned incentives and suppression.
 - [Apple App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/): subscription information and privacy disclosures/retention/deletion.
 - [Google Play User Data policy](https://support.google.com/googleplay/android-developer/answer/10144311?hl=en): accurate privacy disclosures, retention/deletion and third-party data handling.
 
 ## Verification
 
-- Both HTML documents parse with balanced structure, one H1 and valid local links/assets.
-- Markdown article text and links match the HTML versions; date/version match.
+- All three HTML documents parse with balanced structure, one H1 and valid local links/assets.
+- All three Markdown article texts and links match their HTML versions; date/version match.
 - Original subscription and audit-vault disclosures remain in both formats.
 - `git diff --check` passes. Existing legal-page CSS and responsive layout are retained; visual browser review remains unavailable in this environment.
