@@ -180,7 +180,7 @@ h1 {
   mask: var(--btn-icon) center / contain no-repeat;
 }
 
-.btn-waitlist {
+.btn-launch {
   --btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 2v4'/%3E%3Cpath d='M16 2v4'/%3E%3Crect x='3' y='4' width='18' height='18' rx='3'/%3E%3Cpath d='M3 10h18'/%3E%3Cpath d='M12 14v5'/%3E%3Cpath d='M9.5 16.5h5'/%3E%3C/svg%3E");
 }
 
@@ -686,4 +686,93 @@ h1 {
   .help-topic {
     padding: 16px;
   }
+}
+
+/* Launch content extends the existing brand tokens and responsive card layouts. */
+.event-section {
+  border-top: 4px solid var(--navy-strong);
+  scroll-margin-top: 20px;
+}
+
+.event-details {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+}
+
+.event-details div {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(30, 43, 214, 0.04);
+}
+
+.event-details dt {
+  margin-bottom: 8px;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.event-details dd {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.event-note {
+  margin: 16px 0 0;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.pillar-grid,
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.pillar-grid .card:last-child {
+  grid-column: 1 / -1;
+}
+
+.plan-grid ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.plan-grid li + li {
+  margin-top: 6px;
+}
+
+.audience-columns h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--navy-strong);
+  outline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .event-details,
+  .pillar-grid,
+  .plan-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+  .btn:hover { transform: none; }
 }
