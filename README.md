@@ -58,4 +58,4 @@ The launch content is prepared on `feature/launch-party-2026-content`. Review an
 - Review help describes the completed-inquiry flow present on the mobile app's `dev` branch and qualifies actions by availability. Confirm the reviews backend migrations and app release are deployed before advertising reviews more broadly.
 - After the party, replace the dated invitation and RSVP calls to action with evergreen product content. The page intentionally uses the full date instead of a relative “tomorrow” label.
 
-Before publishing, open all three pages at phone and desktop widths, follow navigation and fragment links, check the RSVP and directions, and verify store access on a phone. Legal documents and hosting configuration are unchanged.
+Before publishing, open all three pages at phone and desktop widths, follow navigation and fragment links, check the RSVP and directions, and verify store access on a phone. Hosting configuration is unchanged. Vendor Agreement and Privacy Policy updates are documented in [the October 20 review](./legal-review-2026-10-20.md).
