@@ -4,7 +4,7 @@ Static home, product overview, and support site for GitHub Pages deployment with
 
 ## Files
 
-- `index.html` home page, launch party details, RSVP, and getting started
+- `index.html` vendor-first home page, five pillars, plans, FAQs, and download/setup guidance
 - `marketing.html` features, audiences, and Basic/Pro overview
 - `help.html` onboarding, workflow help, subscriptions, and reviews
 - `styles.css` brand styling (mobile app palette)
@@ -47,15 +47,21 @@ python3 -m http.server 8080
 ```
 
 
-## October 21, 2026 launch update
+## Post-launch website — October 22, 2026
 
-The launch content is prepared on `feature/launch-party-2026-content`. Review and merge through your normal process; publishing is not part of this change. Neither `main` nor `dev` is updated by this feature branch.
+Prepared on `feature/post-launch-website`, based on the merged launch update. No deployment or merge is included.
 
-- Party: Wednesday, October 21, 2026, 6:30–8:30 PM Eastern, 7000 Tea Olive Road, Marvin, NC 28173. RSVP uses the existing Evite invitation.
-- Existing fonts, brand color tokens, logo, imagery, and card patterns are retained.
-- Plan descriptions follow the current Vendor Agreement. Prices and trial eligibility are shown by the purchasing store rather than hardcoded into the website.
-- Store buttons link to verified public EezEvent listings: Apple App Store ID `6774633058` and Google Play package `com.eezevent.app` (checked October 20, 2026).
-- Review help describes the completed-inquiry flow present on the mobile app's `dev` branch and qualifies actions by availability. Confirm the reviews backend migrations and app release are deployed before advertising reviews more broadly.
-- After the party, replace the dated invitation and RSVP calls to action with evergreen product content. The page intentionally uses the full date instead of a relative “tomorrow” label.
+- Vendor-first homepage: business challenges, five launch-deck pillars, inquiry-to-booking walkthrough, Basic/Pro, client/host secondary section, FAQs, downloads and setup.
+- Pillar names: Discover & Connect; Capture & Convert; Plan & Organize; Communicate & Collaborate; Track, Analyze & Grow. Document storage is emphasized under Plan & Organize. Growth copy describes current dashboard/status visibility, not future analytics or guaranteed outcomes.
+- Product overview provides deeper feature details and working setup-guide links for each pillar.
+- Existing blue/indigo tokens, typography, logo and card layouts remain. The existing dashboard asset is labeled as an illustrative preview with sample data; no performance statistics are presented as customer results.
+- All public navigation uses download/setup calls to action instead of the completed launch party. Legal article text, policy versions, and effective dates are unchanged by this update; only their header navigation changes.
+- Store links: Apple App Store ID `6774633058`; Google Play package `com.eezevent.app`. Both SVG QR codes encode these exact HTTPS links with a four-module quiet zone. QR generation requires no client-side code or third-party QR service.
+- Plan descriptions follow the current Vendor Agreement. The purchasing store remains authoritative for localized pricing, trial eligibility, and renewal terms.
+- No new analytics, forms, trackers, JavaScript framework or runtime dependency. FAQs use native HTML disclosure controls.
 
-Before publishing, open all three pages at phone and desktop widths, follow navigation and fragment links, check the RSVP and directions, and verify store access on a phone. Hosting configuration is unchanged. Customer Terms, Vendor Agreement, and Privacy Policy updates are documented in [the October 20 review](./legal-review-2026-10-20.md).
+## Review before publishing
+
+Open home, features and help at phone and desktop widths. Check store/QR links, FAQ disclosure controls, section navigation and policy-header download links. Scan the codes with a physical phone. Hosting configuration is unchanged.
+
+The policy review remains in [legal-review-2026-10-20.md](./legal-review-2026-10-20.md); this website content update does not resolve backend retention, release or policy-acceptance operations.
