@@ -921,27 +921,51 @@ a:focus-visible {
 }
 .faq-list details {
   border-top: 1px solid var(--line);
-  padding: 16px 0;
 }
 .faq-list details:last-child {
-  padding-bottom: 0;
+  border-bottom: 1px solid var(--line);
 }
 .faq-list summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 4px;
+  border-radius: 8px;
   cursor: pointer;
+  list-style: none;
   color: var(--navy);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
+  text-align: left;
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  margin-right: 4px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+.faq-list details[open] > summary::after {
+  transform: rotate(225deg);
 }
 .faq-list p {
   color: var(--ink-soft);
   line-height: 1.6;
-  margin: 12px 0 0;
-  max-width: 85ch;
+  margin: 0;
+  padding: 0 4px 20px;
+  max-width: none;
 }
 summary:focus-visible {
-  outline: 3px solid var(--navy-strong);
-  outline-offset: 4px;
+  outline: 2px solid var(--navy-strong);
+  outline-offset: -2px;
 }
 .download-grid {
   display: grid;
@@ -983,8 +1007,12 @@ summary:focus-visible {
 }
 .pillar-detail-heading {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 18px;
+  margin-bottom: 16px;
+}
+.pillar-detail-heading .section-kicker {
+  margin: 0;
 }
 .pillar-detail-heading > div {
   flex: 1;
