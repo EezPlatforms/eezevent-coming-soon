@@ -20,3 +20,9 @@
 .how-guide-note a{color:#164bb8;text-decoration:underline;text-underline-offset:3px}
 #how-it-works{scroll-margin-top:24px}
 @media(max-width:800px){.how-paths{grid-template-columns:minmax(0,1fr)}}
+
+/* Keep Login available when the secondary home links collapse on mobile. */
+.nav-login{color:#e0ebff;font-size:14px;white-space:nowrap}
+.nav-login:hover{color:#fff}
+@media(max-width:950px){.nav-login{margin-left:auto}}
+@media(max-width:620px){.nav{gap:14px}.nav-login{font-size:13px}}
