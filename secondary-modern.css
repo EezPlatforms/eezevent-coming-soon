@@ -8,6 +8,15 @@ body{background:linear-gradient(180deg,#f0f5ff 0,#fff 470px)!important;color:#0f
 .brand-wordmark{font-family:Manrope,"DM Sans",sans-serif!important;font-weight:800!important;font-size:27px!important;letter-spacing:-.06em!important;color:#0d47a1!important;transform:none!important}
 .brand-logo{border-radius:12px!important}
 .topbar-actions{display:flex!important;flex-wrap:wrap!important;gap:8px!important}
+.secondary-nav{display:flex;align-items:center;justify-content:flex-end;gap:32px;margin-left:auto}
+.secondary-nav-links{display:flex;align-items:center;flex-wrap:wrap;gap:24px;font-size:14px;color:#52647f}
+.secondary-nav a{text-decoration:none;white-space:nowrap}
+.secondary-nav-links a:hover,.secondary-nav-links a[aria-current="page"]{color:#0d47a1}
+.secondary-nav-links a[aria-current="page"]{font-weight:800}
+.secondary-nav-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 20px;border-radius:100px;background:#1e2bd6;color:#fff;font-size:14px;font-weight:800}
+.secondary-nav-cta:hover{background:#0d47a1}
+@media(max-width:1000px){.topbar{flex-wrap:wrap}.secondary-nav{flex-wrap:wrap;gap:16px}.secondary-nav-links{gap:18px}}
+@media(max-width:700px){.secondary-nav{width:100%;justify-content:space-between;margin-left:0}.secondary-nav-links{gap:12px 18px;font-size:13px}.secondary-nav-cta{padding:12px 18px;font-size:13px}}
 .topbar-actions .btn,.topbar-actions a{border-radius:999px!important;font-size:13px!important;font-weight:800!important;padding:12px 18px!important;text-decoration:none!important;transition:background .2s,transform .2s}
 .topbar-actions .btn:hover,.topbar-actions a:hover{transform:translateY(-1px)}
 .topbar-actions .btn-solid{background:#1e2bd6!important;color:#fff!important;border-color:#1e2bd6!important}

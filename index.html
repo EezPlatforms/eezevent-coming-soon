@@ -17,13 +17,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./modern.css">
+  <link rel="stylesheet" href="./footer.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <nav class="nav wrap" aria-label="Main navigation">
     <a class="brand" href="./index.html" aria-label="EezEvent home"><img src="./assets/eezevent-just-logo.png" alt="" width="38" height="38"><span>EezEvent</span></a>
-    <div class="nav-links"><a href="#experiences">Who it's for</a><a href="#how-it-works">How it works</a><a href="./marketing.html">All features</a><a href="./help.html">Help</a></div>
+    <div class="nav-links"><a href="#experiences">Who it's for</a><a href="#how-it-works">How it works</a><a href="./marketing.html">Explore EezEvent</a><a href="./help.html">Help</a></div>
     <a class="nav-cta" href="#get-started">Get EezEvent <span aria-hidden="true">↗</span></a>
   </nav>
 </header>
@@ -38,14 +39,10 @@
       <div class="hero-actions"><a class="button button-light" href="#experiences">Explore EezEvent <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="#get-started">Get the app <span aria-hidden="true">↓</span></a></div>
       <div class="hero-proof"><span class="proof-symbol">✦</span> Built for the people behind every event</div>
     </div>
-    <div class="hero-art" aria-label="Illustration of the EezEvent vendor and host experiences">
-      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-      <div class="art-label art-label-top"><span class="tiny-icon">✦</span> Your business, connected</div>
-      <div class="phone-shell"><div class="phone-camera"></div><div class="phone-screen"><div class="phone-top"><span>eezevent</span><span>● ● ●</span></div><div class="phone-welcome">Good morning! <span>✳</span></div><div class="phone-title">Make every<br>moment count.</div><div class="phone-panel"><span class="panel-kicker">YOUR WORKSPACE</span><div class="mini-line long"></div><div class="mini-line"></div><div class="mini-row"><span class="mini-tile">✉</span><span class="mini-tile">▦</span><span class="mini-tile">★</span></div></div><div class="phone-bottom">Home <span>Explore</span> Events <span>Profile</span></div></div></div>
-      <div class="floating-card float-inquiry"><span class="float-icon">✉</span><span><strong>New inquiry</strong><small>Keep opportunities moving</small></span><span class="float-check">✓</span></div>
-      <div class="floating-card float-rsvp"><span class="float-icon">♥</span><span><strong>Guest RSVP</strong><small>Stay in the know</small></span><span class="float-check">✓</span></div>
-      <div class="art-spark art-spark-one">✦</div><div class="art-spark art-spark-two">✧</div>
-    </div>
+    <figure class="hero-art hero-product">
+      <img class="hero-dashboard" width="900" height="1951" src="./assets/vendor-dashboard.webp" alt="EezEvent business dashboard showing inquiries, upcoming events, revenue, and items needing attention." fetchpriority="high" decoding="async">
+      <figcaption>Your business, connected.</figcaption>
+    </figure>
   </div>
 </section>
 <section class="persona-section wrap" id="experiences" aria-labelledby="persona-title">
@@ -77,9 +74,58 @@
 </section>
 <section class="showcase-section wrap" id="invitations"><div class="section-intro"><span class="kicker">INVITE. TRACK. CELEBRATE.</span><h2>Guest lists, simplified.</h2><p>Bring your own invitation design. Keep guest responses organized in one place.</p></div><div class="showcase-grid"><div class="showcase-copy"><span class="persona-overline">INVITATIONS & RSVPs</span><h3>Your invitation.<br>Every response.</h3><p>Upload an invitation image, share a link and see who's coming — without juggling spreadsheets.</p><div class="showcase-bullets"><span>✓ Your own invitation image</span><span>✓ Yes, No & Maybe responses</span><span>✓ Adults and kids counts</span></div></div><div class="rsvp-preview" aria-label="Illustrative EezEvent RSVP summary using fictional sample data"><div class="rsvp-header"><strong>Invitation & RSVPs</strong><small>Invite guests and track attendance.</small></div><div class="rsvp-tabs"><span>Invitation</span><b>Guest responses (12)</b></div><div class="rsvp-cards"><div class="rsvp-yes"><small>✓ Yes</small><strong>9</strong><span>21 guests</span></div><div class="rsvp-maybe"><small>? Maybe</small><strong>3</strong><span>5 guests</span></div></div><div class="rsvp-guest"><strong>Jordan Lee</strong><span>Yes</span><small>2 adults · 1 child</small></div><div class="rsvp-guest"><strong>Taylor Morgan</strong><span>Maybe</span><small>2 adults</small></div></div></div></section>
 <section class="statement-band"><div class="wrap"><span>DISCOVER</span><i>✦</i><span>CONNECT</span><i>✦</i><span>PLAN</span><i>✦</i><span>CELEBRATE</span></div></section>
-<section class="how-section wrap" id="how-it-works"><div class="section-intro"><span class="kicker">SIMPLICITY IS THE FEATURE</span><h2>More doing.<br><em>Less juggling.</em></h2></div><div class="steps"><article><div class="step-number">01</div><h3>Create your space</h3><p>Join as a business or a host.</p></article><article><div class="step-number">02</div><h3>Make connections</h3><p>Discover services and start conversations.</p></article><article><div class="step-number">03</div><h3>Make it happen</h3><p>Bring every moving piece together.</p></article></div></section>
+<section class="how-section wrap" id="how-it-works" aria-labelledby="how-title">
+  <div class="section-intro">
+    <span class="kicker">HOW EEZEVENT WORKS</span>
+    <h2 id="how-title">From getting started<br>to getting it organized.</h2>
+    <p>Download EezEvent, choose the vendor or client path, and sign in. Then follow the workflow that fits your role.</p>
+    <a class="text-action" href="#get-started">Get the app <span aria-hidden="true">↓</span></a>
+  </div>
+  <div class="how-paths">
+    <article class="how-path" aria-labelledby="how-vendor-title">
+      <span class="persona-overline">FOR EVENT BUSINESSES</span>
+      <h3 id="how-vendor-title">Turn inquiries into organized work.</h3>
+      <ol class="how-workflow">
+        <li><h4>Set up your business and services</h4><p>Review Basic and Pro options, create your business, and add service details, photos, pricing, and a catalog so clients can explore your offerings.</p></li>
+        <li><h4>Review inquiries and send quotes</h4><p>Open a client's inquiry to see the event details. Ask questions in Messages and share a quote with the next steps.</p></li>
+        <li><h4>Agree on the work</h4><p>When the client accepts a quote, issue a contract and follow its signing status. Keep the booking discussion and documents with the inquiry.</p></li>
+        <li><h4>Keep delivery on track</h4><p>Review confirmed work, calendar commitments, and items needing attention from your business workspace.</p></li>
+      </ol>
+      <a class="text-action" href="./help.html#help-business">Business setup guide <span aria-hidden="true">→</span></a>
+    </article>
+    <article class="how-path" aria-labelledby="how-host-title">
+      <span class="persona-overline">FOR CLIENTS &amp; HOSTS</span>
+      <h3 id="how-host-title">Bring your event plans together.</h3>
+      <ol class="how-workflow">
+        <li><h4>Create your event</h4><p>Add the event type, location, date, guest count, budget, and services you need to give your planning a starting point.</p></li>
+        <li><h4>Find vendors and send inquiries</h4><p>Search by service type, explore profiles and photos, and send vendors an inquiry with your event and a message. Confirm availability directly with each vendor.</p></li>
+        <li><h4>Review quotes and confirm details</h4><p>Discuss options in Messages, accept a suitable quote, and review and sign the vendor's contract when you're ready to proceed.</p></li>
+        <li><h4>Coordinate the celebration</h4><p>Keep vendor conversations and documents together. Add your invitation image, share the RSVP link, and track guest responses.</p></li>
+      </ol>
+      <a class="text-action" href="./help.html#help-events">Event planning guide <span aria-hidden="true">→</span></a>
+    </article>
+  </div>
+  <p class="how-guide-note">Already set up? <a href="./help.html#help-inquiries">See the inquiry and booking workflow</a>, or <a href="./marketing.html#plans">compare Basic and Pro</a>.</p>
+</section>
 <section class="download-section" id="get-started"><div class="wrap download-layout"><div><span class="kicker">YOUR NEXT EVENT STARTS HERE</span><h2>Ready to make<br><em>more happen?</em></h2><p>Take EezEvent with you, wherever the event takes you.</p><div class="download-actions"><a class="button button-light" href="https://apps.apple.com/us/app/eezevent/id6774633058" target="_blank" rel="noopener noreferrer">App Store ↗</a><a class="button button-ghost" href="https://play.google.com/store/apps/details?id=com.eezevent.app" target="_blank" rel="noopener noreferrer">Google Play ↗</a></div><p class="browser-note">Prefer a browser? The EezEvent web experience is growing. <a href="./help.html">Learn more</a>.</p></div><div class="download-art" aria-hidden="true"><span class="download-shape">✦</span><span class="download-shape-small">✳</span><div class="download-message">Your next big moment<br><strong>starts here.</strong></div></div></div></section>
 </main>
-<footer class="footer"><div class="wrap footer-main"><div class="footer-brand"><a class="brand" href="./index.html"><img src="./assets/eezevent-just-logo.png" alt="" width="34" height="34"><span>EezEvent</span></a><p>Your business. Better connected.<br>Smartly managed.</p></div><div class="footer-links"><a href="./marketing.html">Features</a><a href="./help.html">Help & support</a><a href="./agreements/privacy-policy.html">Privacy</a><a href="./agreements/customer-agreement.html">Host terms</a><a href="./agreements/vendor-agreement.html">Business terms</a><a href="mailto:support@eezevent.com">Contact</a></div></div><div class="wrap footer-bottom"><span>© 2026 EezPlatforms LLC. All rights reserved.</span><span>Made for memorable moments.</span></div></footer>
+<footer class="site-footer">
+  <div class="site-footer-inner site-footer-main">
+    <div>
+      <a class="site-footer-brand" href="./index.html" aria-label="EezEvent home"><img src="./assets/eezevent-just-logo.png" alt="" width="34" height="34"><span>EezEvent</span></a>
+      <p class="site-footer-description">Your business. Better connected.<br>Smartly managed.</p>
+    </div>
+    <nav class="site-footer-links" aria-label="Footer navigation">
+      <a href="./marketing.html">Explore EezEvent</a>
+      <a href="./help.html">Help &amp; support</a>
+      <a href="./agreements/privacy-policy.html">Privacy</a>
+      <a href="./agreements/customer-agreement.html">Host terms</a>
+      <a href="./agreements/vendor-agreement.html">Business terms</a>
+      <a href="mailto:support@eezevent.com">Contact</a>
+    </nav>
+  </div>
+  <div class="site-footer-inner site-footer-bottom"><span>© 2026 EezPlatforms LLC. All rights reserved.</span><span>Made for memorable moments.</span></div>
+</footer>
+
 <script src="./persona.js" defer></script>
 </body></html>

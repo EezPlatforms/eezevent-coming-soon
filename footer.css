@@ -1,0 +1,14 @@
+/* Shared public-site footer. Keep independent of page-specific styles. */
+.site-footer{background:#071937;color:#fff;font-family:"DM Sans","Source Sans 3",system-ui,sans-serif;text-align:left}
+.site-footer *{box-sizing:border-box}
+.site-footer-inner{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+.site-footer-main{padding:65px 0;display:flex;justify-content:space-between;gap:30px}
+.site-footer a{color:inherit;text-decoration:none}
+.site-footer-brand{display:inline-flex;align-items:center;gap:10px;font-family:Manrope,"DM Sans",system-ui,sans-serif;font-size:24px;font-weight:800;letter-spacing:-.06em}
+.site-footer-brand img{display:block;object-fit:contain}
+.site-footer-description{color:#bbcee9;font-size:14px;line-height:1.6;margin:20px 0 0}
+.site-footer-links{display:flex;flex-wrap:wrap;align-content:flex-start;gap:18px 24px;max-width:570px;color:#dce7f8;font-size:13px}
+.site-footer-links a:hover{text-decoration:underline;text-underline-offset:4px}
+.site-footer a:focus-visible{outline:3px solid #ffcb69;outline-offset:4px}
+.site-footer-bottom{border-top:1px solid #ffffff25;display:flex;justify-content:space-between;gap:16px;padding:24px 0;color:#9aafd0;font-size:12px;line-height:1.6}
+@media(max-width:800px){.site-footer-main{flex-direction:column;padding:45px 0}.site-footer-bottom{flex-direction:column;gap:8px}}

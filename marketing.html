@@ -40,7 +40,8 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./secondary-modern.css">
-  </head>
+    <link rel="stylesheet" href="./footer.css">
+</head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <main class="page" id="main-content">
@@ -53,21 +54,15 @@
           />
           <span class="brand-wordmark">EezEvent</span>
         </a>
-        <div class="button-row topbar-actions" aria-label="Site navigation">
-          <a
-            class="btn btn-solid btn-icon btn-download"
-            href="./index.html#get-started"
-            >Get the app</a
-          >
-          <a class="btn btn-outline btn-icon btn-support" href="./help.html"
-            >Support</a
-          >
-          <a
-            class="btn btn-outline btn-icon btn-overview"
-            href="./marketing.html"
-            >Features</a
-          >
-        </div>
+        <nav class="secondary-nav" aria-label="Main navigation">
+          <div class="secondary-nav-links">
+            <a href="./index.html#experiences">Who it's for</a>
+            <a href="./index.html#how-it-works">How it works</a>
+            <a href="./marketing.html" aria-current="page">Explore EezEvent</a>
+            <a href="./help.html">Help</a>
+          </div>
+          <a class="secondary-nav-cta" href="./index.html#get-started">Get EezEvent <span aria-hidden="true">↗</span></a>
+        </nav>
       </header>
 
       <section class="hero-panel">
@@ -496,35 +491,24 @@
         </div>
       </section>
 
-      <footer class="launch-note">
-        <p>
-          <a class="footer-link" href="./index.html">Back to EezEvent home</a> |
-          <a class="footer-link" href="./help.html">Support and help guide</a>
-        </p>
-        <p>
-          <a class="footer-link" href="./agreements/privacy-policy.html"
-            >Privacy Policy</a
-          >
-          |
-          <a class="footer-link" href="./agreements/customer-agreement.html"
-            >Customer Terms</a
-          >
-          |
-          <a class="footer-link" href="./agreements/vendor-agreement.html"
-            >Vendor Agreement</a
-          >
-        </p>
-        <p>
-          Contact:
-          <a class="footer-link" href="mailto:support@eezevent.com"
-            >support@eezevent.com</a
-          >
-        </p>
-        <p>
-          © 2026 EezPlatforms LLC. EezEvent is a product of EezPlatforms LLC.
-          All rights reserved.
-        </p>
-      </footer>
-    </main>
+      </main>
+<footer class="site-footer">
+  <div class="site-footer-inner site-footer-main">
+    <div>
+      <a class="site-footer-brand" href="./index.html" aria-label="EezEvent home"><img src="./assets/eezevent-just-logo.png" alt="" width="34" height="34"><span>EezEvent</span></a>
+      <p class="site-footer-description">Your business. Better connected.<br>Smartly managed.</p>
+    </div>
+    <nav class="site-footer-links" aria-label="Footer navigation">
+      <a href="./marketing.html">Explore EezEvent</a>
+      <a href="./help.html">Help &amp; support</a>
+      <a href="./agreements/privacy-policy.html">Privacy</a>
+      <a href="./agreements/customer-agreement.html">Host terms</a>
+      <a href="./agreements/vendor-agreement.html">Business terms</a>
+      <a href="mailto:support@eezevent.com">Contact</a>
+    </nav>
+  </div>
+  <div class="site-footer-inner site-footer-bottom"><span>© 2026 EezPlatforms LLC. All rights reserved.</span><span>Made for memorable moments.</span></div>
+</footer>
+
   </body>
 </html>
