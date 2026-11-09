@@ -39,7 +39,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-  </head>
+    <link rel="stylesheet" href="./secondary-modern.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <main class="page" id="main-content">
@@ -52,21 +54,15 @@
           />
           <span class="brand-wordmark">EezEvent</span>
         </a>
-        <div class="button-row topbar-actions" aria-label="Site navigation">
-          <a
-            class="btn btn-solid btn-icon btn-download"
-            href="./index.html#get-started"
-            >Get the app</a
-          >
-          <a class="btn btn-outline btn-icon btn-support" href="./help.html"
-            >Support</a
-          >
-          <a
-            class="btn btn-outline btn-icon btn-overview"
-            href="./marketing.html"
-            >Features</a
-          >
-        </div>
+        <nav class="secondary-nav" aria-label="Main navigation">
+          <div class="secondary-nav-links">
+            <a href="./index.html#experiences">Who it's for</a>
+            <a href="./index.html#how-it-works">How it works</a>
+            <a href="./marketing.html" aria-current="page">Explore EezEvent</a>
+            <a href="./help.html">Help</a>
+          </div>
+          <a class="secondary-nav-cta" href="./index.html#get-started">Get EezEvent <span aria-hidden="true">↗</span></a>
+        </nav>
       </header>
 
       <section class="hero-panel">
@@ -95,216 +91,309 @@
         id="discover"
         aria-labelledby="discover-title"
       >
-        <div class="pillar-detail-heading">
-          <span class="pillar-number" aria-hidden="true">01</span>
-          <div>
-            <p class="section-kicker">Discover &amp; Connect</p>
+        <div class="pillar-copy">
+          <div class="pillar-detail-heading">
+            <span class="pillar-number" aria-hidden="true">01</span>
+            <div>
+              <p class="section-kicker">Discover &amp; Connect</p>
+            </div>
+            <svg
+              class="pillar-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="10" cy="10" r="6" />
+              <path d="m15 15 5 5" />
+            </svg>
           </div>
-          <svg
-            class="pillar-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
+          <h2 id="discover-title">Get found by the right clients.</h2>
+              <p class="section-intro">
+                Showcase what makes your business worth discovering.
+              </p>
+          <ul class="benefit-list">
+            <li>
+              Create a business profile with services, photos, and catalog items.
+            </li>
+            <li>
+              Help clients explore your offerings and inquire with event details.
+            </li>
+            <li>
+              Use eligible Pro local event leads and outreach to connect with new
+              opportunities.
+            </li>
+          </ul>
+          <a class="text-link" href="./help.html#help-business"
+            >Read the setup guide →</a
           >
-            <circle cx="10" cy="10" r="6" />
-            <path d="m15 15 5 5" />
-          </svg>
         </div>
-        <h2 id="discover-title">Get found by the right clients.</h2>
-            <p class="section-intro">
-              Showcase what makes your business worth discovering.
-            </p>
-        <ul class="benefit-list">
-          <li>
-            Create a business profile with services, photos, and catalog items.
-          </li>
-          <li>
-            Help clients explore your offerings and inquire with event details.
-          </li>
-          <li>
-            Use eligible Pro local event leads and outreach to connect with new
-            opportunities.
-          </li>
-        </ul>
-        <a class="text-link" href="./help.html#help-business"
-          >Read the setup guide →</a
-        >
+        <figure class="pillar-visual" aria-hidden="true">
+          <img
+            src="./assets/pillar-discover.webp"
+            alt=""
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
       </section>
       <section
         class="section pillar-detail"
         id="capture"
         aria-labelledby="capture-title"
       >
-        <div class="pillar-detail-heading">
-          <span class="pillar-number" aria-hidden="true">02</span>
-          <div>
-            <p class="section-kicker">Capture &amp; Convert</p>
+        <div class="pillar-copy">
+          <div class="pillar-detail-heading">
+            <span class="pillar-number" aria-hidden="true">02</span>
+            <div>
+              <p class="section-kicker">Capture &amp; Convert</p>
+            </div>
+            <svg
+              class="pillar-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 4h18v16H3zM3 13h5l2 3h4l2-3h5" />
+            </svg>
           </div>
-          <svg
-            class="pillar-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
+          <h2 id="capture-title">All your inquiries. One place.</h2>
+              <p class="section-intro">
+                Keep opportunities moving from the first question to confirmed
+                work.
+              </p>
+          <ul class="benefit-list">
+            <li>Organize inquiries and review the status of each opportunity.</li>
+            <li>
+              Follow up, share quotes, and keep the booking discussion in context.
+            </li>
+            <li>
+              Track new, pending, and confirmed work without losing the next step.
+            </li>
+          </ul>
+          <a class="text-link" href="./help.html#help-inquiries"
+            >Read the setup guide →</a
           >
-            <path d="M3 4h18v16H3zM3 13h5l2 3h4l2-3h5" />
-          </svg>
         </div>
-        <h2 id="capture-title">All your inquiries. One place.</h2>
-            <p class="section-intro">
-              Keep opportunities moving from the first question to confirmed
-              work.
-            </p>
-        <ul class="benefit-list">
-          <li>Organize inquiries and review the status of each opportunity.</li>
-          <li>
-            Follow up, share quotes, and keep the booking discussion in context.
-          </li>
-          <li>
-            Track new, pending, and confirmed work without losing the next step.
-          </li>
-        </ul>
-        <a class="text-link" href="./help.html#help-inquiries"
-          >Read the setup guide →</a
-        >
+        <figure class="pillar-visual" aria-hidden="true">
+          <img
+            src="./assets/pillar-capture.webp"
+            alt=""
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
       </section>
       <section
         class="section pillar-detail"
         id="plan"
         aria-labelledby="plan-title"
       >
-        <div class="pillar-detail-heading">
-          <span class="pillar-number" aria-hidden="true">03</span>
-          <div>
-            <p class="section-kicker">Plan &amp; Organize</p>
+        <div class="pillar-copy">
+          <div class="pillar-detail-heading">
+            <span class="pillar-number" aria-hidden="true">03</span>
+            <div>
+              <p class="section-kicker">Plan &amp; Organize</p>
+            </div>
+            <svg
+              class="pillar-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="5" width="18" height="16" rx="2" />
+              <path d="M7 3v4m10-4v4M3 11h18m-12 4h2m4 0h2" />
+            </svg>
           </div>
-          <svg
-            class="pillar-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
+          <h2 id="plan-title">More organized. Less chaos.</h2>
+              <p class="section-intro">
+                Give your schedule and important documents a shared home.
+              </p>
+          <ul class="benefit-list">
+            <li>Review calendar commitments, event details, and availability.</li>
+            <li>
+              Keep quotes, contracts, schedules, and supporting files with the
+              right inquiry.
+            </li>
+            <li>
+              Open the relevant documents when a client or teammate needs an
+              answer.
+            </li>
+          </ul>
+          <a class="text-link" href="./help.html#help-documents"
+            >Read the setup guide →</a
           >
-            <rect x="3" y="5" width="18" height="16" rx="2" />
-            <path d="M7 3v4m10-4v4M3 11h18m-12 4h2m4 0h2" />
-          </svg>
         </div>
-        <h2 id="plan-title">More organized. Less chaos.</h2>
-            <p class="section-intro">
-              Give your schedule and important documents a shared home.
-            </p>
-        <ul class="benefit-list">
-          <li>Review calendar commitments, event details, and availability.</li>
-          <li>
-            Keep quotes, contracts, schedules, and supporting files with the
-            right inquiry.
-          </li>
-          <li>
-            Open the relevant documents when a client or teammate needs an
-            answer.
-          </li>
-        </ul>
-        <a class="text-link" href="./help.html#help-documents"
-          >Read the setup guide →</a
-        >
+        <figure class="pillar-visual" aria-hidden="true">
+          <img
+            src="./assets/pillar-plan.webp"
+            alt=""
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
       </section>
       <section
         class="section pillar-detail"
         id="communicate"
         aria-labelledby="communicate-title"
       >
-        <div class="pillar-detail-heading">
-          <span class="pillar-number" aria-hidden="true">04</span>
-          <div>
-            <p class="section-kicker">Communicate &amp; Collaborate</p>
+        <div class="pillar-copy">
+          <div class="pillar-detail-heading">
+            <span class="pillar-number" aria-hidden="true">04</span>
+            <div>
+              <p class="section-kicker">Communicate &amp; Collaborate</p>
+            </div>
+            <svg
+              class="pillar-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="9" cy="8" r="3" />
+              <path
+                d="M3 21v-3a6 6 0 0 1 12 0v3m2-16a3 3 0 0 1 0 6m4 10v-3a6 6 0 0 0-3-5"
+              />
+            </svg>
           </div>
-          <svg
-            class="pillar-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
+          <h2 id="communicate-title">One team. One conversation hub.</h2>
+              <p class="section-intro">
+                Keep people and conversations connected to the work.
+              </p>
+          <ul class="benefit-list">
+            <li>
+              Continue client conversations in Messages from the relevant inquiry.
+            </li>
+            <li>
+              Find the discussion and attachments without creating a second
+              conversation.
+            </li>
+            <li>
+              Coordinate with business and service team members through an
+              eligible Pro business.
+            </li>
+          </ul>
+          <a class="text-link" href="./help.html#help-messaging"
+            >Read the setup guide →</a
           >
-            <circle cx="9" cy="8" r="3" />
-            <path
-              d="M3 21v-3a6 6 0 0 1 12 0v3m2-16a3 3 0 0 1 0 6m4 10v-3a6 6 0 0 0-3-5"
-            />
-          </svg>
         </div>
-        <h2 id="communicate-title">One team. One conversation hub.</h2>
-            <p class="section-intro">
-              Keep people and conversations connected to the work.
-            </p>
-        <ul class="benefit-list">
-          <li>
-            Continue client conversations in Messages from the relevant inquiry.
-          </li>
-          <li>
-            Find the discussion and attachments without creating a second
-            conversation.
-          </li>
-          <li>
-            Coordinate with business and service team members through an
-            eligible Pro business.
-          </li>
-        </ul>
-        <a class="text-link" href="./help.html#help-messaging"
-          >Read the setup guide →</a
-        >
+        <figure class="pillar-visual" aria-hidden="true">
+          <img
+            src="./assets/pillar-communicate.webp"
+            alt=""
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
       </section>
       <section
         class="section pillar-detail"
         id="grow"
         aria-labelledby="grow-title"
       >
-        <div class="pillar-detail-heading">
-          <span class="pillar-number" aria-hidden="true">05</span>
-          <div>
-            <p class="section-kicker">Track, Analyze &amp; Grow</p>
+        <div class="pillar-copy">
+          <div class="pillar-detail-heading">
+            <span class="pillar-number" aria-hidden="true">05</span>
+            <div>
+              <p class="section-kicker">Track, Analyze &amp; Grow</p>
+            </div>
+            <svg
+              class="pillar-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 3v18h17M8 16v-4m5 4V8m5 8V5" />
+            </svg>
           </div>
-          <svg
-            class="pillar-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
+          <h2 id="grow-title">Know where your business stands.</h2>
+              <p class="section-intro">
+                Use everyday business visibility to decide where to focus next.
+              </p>
+          <ul class="benefit-list">
+            <li>Review dashboard summaries of inquiries and confirmed work.</li>
+            <li>
+              Check statuses and upcoming commitments to identify follow-ups.
+            </li>
+            <li>
+              Use the information in your workspace to make informed business
+              decisions.
+            </li>
+          </ul>
+          <a class="text-link" href="./help.html#help-dashboard"
+            >Read the setup guide →</a
           >
-            <path d="M4 3v18h17M8 16v-4m5 4V8m5 8V5" />
-          </svg>
         </div>
-        <h2 id="grow-title">Know where your business stands.</h2>
-            <p class="section-intro">
-              Use everyday business visibility to decide where to focus next.
-            </p>
-        <ul class="benefit-list">
-          <li>Review dashboard summaries of inquiries and confirmed work.</li>
-          <li>
-            Check statuses and upcoming commitments to identify follow-ups.
-          </li>
-          <li>
-            Use the information in your workspace to make informed business
-            decisions.
-          </li>
-        </ul>
-        <a class="text-link" href="./help.html#help-dashboard"
-          >Read the setup guide →</a
-        >
+        <figure class="pillar-visual" aria-hidden="true">
+          <img
+            src="./assets/pillar-grow.webp"
+            alt=""
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      </section>
+      <section class="section connected-tools" id="new-capabilities" aria-labelledby="new-capabilities-title">
+        <div class="connected-tools-heading">
+          <p class="section-kicker">Beyond the business workspace</p>
+          <h2 id="new-capabilities-title">Bring the people and plans together.</h2>
+          <p class="section-intro">
+            The five pillars support your business. These connected tools help
+            clients and hosts discover your services and coordinate their events.
+          </p>
+        </div>
+        <div class="connected-tools-grid">
+          <article class="card">
+            <p class="connected-tools-label">Discover &amp; share</p>
+            <h3>Help the right services stand out.</h3>
+            <p>Explore specialties that fit an event, and share public vendor profiles with photos, service details, and an easy way to inquire.</p>
+          </article>
+          <article class="card">
+            <p class="connected-tools-label">Choose with confidence</p>
+            <h3>Build connections through trust.</h3>
+            <p>Explore reviews, ratings, and recommendations from event professionals. Vendors can respond to feedback, and each recommended business receives its own inquiry.</p>
+          </article>
+          <article class="card">
+            <p class="connected-tools-label">Invite &amp; coordinate</p>
+            <h3>Keep guests and details organized.</h3>
+            <p>Create invitations with a personal image and message, track RSVPs, and keep event locations and venue details with the plan.</p>
+          </article>
+          <article class="card">
+            <p class="connected-tools-label">Stay connected</p>
+            <h3>Access EezEvent wherever you plan.</h3>
+            <p>Use EezEvent on iPhone and Android, and explore the growing browser-based experience for vendors and hosts.</p>
+          </article>
+        </div>
+        <a class="text-link" href="./help.html">Explore the help guide →</a>
       </section>
       <section class="section" id="plans" aria-labelledby="plans-title">
         <div class="section-heading">
@@ -402,35 +491,24 @@
         </div>
       </section>
 
-      <footer class="launch-note">
-        <p>
-          <a class="footer-link" href="./index.html">Back to EezEvent home</a> |
-          <a class="footer-link" href="./help.html">Support and help guide</a>
-        </p>
-        <p>
-          <a class="footer-link" href="./agreements/privacy-policy.html"
-            >Privacy Policy</a
-          >
-          |
-          <a class="footer-link" href="./agreements/customer-agreement.html"
-            >Customer Terms</a
-          >
-          |
-          <a class="footer-link" href="./agreements/vendor-agreement.html"
-            >Vendor Agreement</a
-          >
-        </p>
-        <p>
-          Contact:
-          <a class="footer-link" href="mailto:support@eezevent.com"
-            >support@eezevent.com</a
-          >
-        </p>
-        <p>
-          © 2026 EezPlatforms LLC. EezEvent is a product of EezPlatforms LLC.
-          All rights reserved.
-        </p>
-      </footer>
-    </main>
+      </main>
+<footer class="site-footer">
+  <div class="site-footer-inner site-footer-main">
+    <div>
+      <a class="site-footer-brand" href="./index.html" aria-label="EezEvent home"><img src="./assets/eezevent-just-logo.png" alt="" width="34" height="34"><span>EezEvent</span></a>
+      <p class="site-footer-description">Your business. Better connected.<br>Smartly managed.</p>
+    </div>
+    <nav class="site-footer-links" aria-label="Footer navigation">
+      <a href="./marketing.html">Explore EezEvent</a>
+      <a href="./help.html">Help &amp; support</a>
+      <a href="./agreements/privacy-policy.html">Privacy</a>
+      <a href="./agreements/customer-agreement.html">Host terms</a>
+      <a href="./agreements/vendor-agreement.html">Business terms</a>
+      <a href="mailto:support@eezevent.com">Contact</a>
+    </nav>
+  </div>
+  <div class="site-footer-inner site-footer-bottom"><span>© 2026 EezPlatforms LLC. All rights reserved.</span><span>Made for memorable moments.</span></div>
+</footer>
+
   </body>
 </html>
